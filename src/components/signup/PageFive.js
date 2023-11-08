@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import Image from 'next/image';
 
 function PageFive() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -11,6 +12,9 @@ function PageFive() {
   const handleBack = () => {
     setCurrentStep(currentStep - 1);
   };
+
+
+
   //! ================================================================================
 
   const options = [
@@ -28,15 +32,17 @@ function PageFive() {
           <div>
             <div>
               <Link href="/home">
-                <img
-                  src="Logo.jpg"
+              <Image
+                  src="/Logo.jpg"
                   width={70}
+                  height={100}
                   style={{ marginLeft: "20%", marginTop: "10px" }}
                 />
               </Link>
-              <img
+              <Image
                 src="/Frame7564.jpg"
                 width={400}
+                height={100}
                 style={{ marginLeft: "20%", marginTop: "40px" }}
               />
               <div className="flex flex-1 flex-col justify-center px-4 py-2 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
@@ -117,7 +123,7 @@ function PageFive() {
             </div>
           </div>
           <div>
-            <img src="Frame750.jpg" />
+          <Image src="/Frame750.jpg" width={700} height={700} />
           </div>
         </div>
       </div>

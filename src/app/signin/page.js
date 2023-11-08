@@ -6,6 +6,7 @@ import Link from "next/link";
 import "@/styles/styles.css";
 import { useForm } from "react-hook-form";
 import axiosInstance from "@/lib/axios";
+import Image from 'next/image';
 
 export default function Signin() {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -46,9 +47,10 @@ export default function Signin() {
           <div id="account">
             <div>
               <Link href="/home">
-                <img
-                  src="Logo.jpg"
+                <Image
+                  src="/Logo.jpg"
                   width={70}
+                  height={100}
                   style={{ marginLeft: "20%", marginTop: "10px" }}
                 />
               </Link>
@@ -172,7 +174,7 @@ export default function Signin() {
             </div>
             <div>
               {" "}
-              <img src="Frame750.jpg" />
+              <Image src="/Frame750.jpg" width={700} height={700} />
             </div>
           </div>
         </div>

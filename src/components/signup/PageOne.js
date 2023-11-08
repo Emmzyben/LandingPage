@@ -2,6 +2,7 @@ import axiosInstance from "@/lib/axios";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import Image from 'next/image';
 
 
 // const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
@@ -60,9 +61,10 @@ function PageOne() {
         <div id="account">
           <div>
             <Link href="/home">
-              <img
-                src="Logo.jpg"
+              <Image
+                src="/Logo.jpg"
                 width={70}
+                height={100}
                 style={{ marginLeft: "20%", marginTop: "10px" }}
               />
             </Link>
@@ -122,11 +124,13 @@ function PageOne() {
                             {...register("password")}
                             
                           />
-                          <img
-                            src={passwordVisible ? 'show.png' : 'hide.png'}
+                          <Image
+                            src={passwordVisible ? 'show.png' : '/hide.png'}
                             alt={passwordVisible ? 'Show Password' : 'Hide Password'}
                             className="absolute top-1/2 transform -translate-y-1/2 right-2 w-5 h-5 cursor-pointer"
                             onClick={togglePasswordVisibility}
+                            width={100}
+                            height={100}
                           />
     
                         </div>
@@ -184,7 +188,7 @@ function PageOne() {
           </div>
           <div>
             {" "}
-            <img src="Frame750.jpg" />
+             <Image src="/Frame750.jpg" width={700} height={700} />
           </div>
         </div>
       </div>
