@@ -66,6 +66,7 @@ function PageOne() {
                 width={70}
                 height={100}
                 style={{ marginLeft: "20%", marginTop: "10px" }}
+                alt='imagery'
               />
             </Link>
             <div className="flex flex-1 flex-col justify-center px-4 py-2 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
@@ -188,7 +189,7 @@ function PageOne() {
           </div>
           <div>
             {" "}
-             <Image src="/Frame750.jpg" width={700} height={700} />
+             <Image src="/Frame750.jpg" width={700} height={700} alt='imagery'/>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ export const About = () => {
   </Link>
   </div>
   <div id='image'>
-<Image src='/flex.svg' width={400} height={500}/>
+<Image src='/flex.svg' width={400} height={500} alt='imagery'/>
   </div>
   </div>
 
@@ -38,13 +38,13 @@ We continuously strive to improve OvaSite based on the feedback of our users. Th
 
 <div  id='circle'>
 <div style={{display:'flex',flexDirection:'row'}} >
-<Image src='Mask group (1).svg' id='circle1'  width={50} height={100}/>
-<Image src='Mask group (2).svg'  width={50} height={100}/>
+<Image src='Mask group (1).svg' id='circle1'  width={50} height={100} alt='imagery'/>
+<Image src='Mask group (2).svg'  width={50} height={100} alt='imagery'/>
 </div>
 
 <div style={{display:'flex',flexDirection:'row', marginTop:'20px'}}>
-<Image src='Mask group.svg' id='circle2' width={50} height={100}/>
-<Image src='Mask group (3).svg'  width={50} height={100}/>
+<Image src='Mask group.svg' id='circle2' width={50} height={100} alt='imagery'/>
+<Image src='Mask group (3).svg'  width={50} height={100} alt='imagery'/>
 </div>
 
 <div style={{fontSize:'15px',lineHeight:'30px',fontWeight:600, textAlign:'center',paddingLeft:'60px',paddingRight:'60px'}}>

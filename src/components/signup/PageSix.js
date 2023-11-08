@@ -52,6 +52,7 @@ function PageSix() {
                   width={70}
                   height={100}
                   style={{ marginLeft: "20%", marginTop: "10px" }}
+                  alt='imagery'
                 />
                 </Link>
                 <Image
@@ -59,6 +60,7 @@ function PageSix() {
                   width={400}
                   height={100}
                   style={{ marginLeft: "20%", marginTop: "40px" }}
+                  alt='imagery'
                 />
 
                 <h1
@@ -176,7 +178,7 @@ rounded text-[#001233] font-medium "
             </div>
           </div>
           <div>
-             <Image src="/Frame750.jpg" width={700} height={700} />
+             <Image src="/Frame750.jpg" width={700} height={700} alt='imagery'/>
           </div>
         </div>
       </div>

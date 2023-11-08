@@ -34,7 +34,7 @@ function PageEight() {
                 marginBottom: "20px",
               }}
             >
-              <Image src="/Logo.jpg" width={200}  height={100}/>
+              <Image src="/Logo.jpg" width={200}  height={100} alt='imagery'/>
             </div>
             <h1 style={{ fontWeight: "bold", fontSize: "30px" }}>
               Setting up account{" "}
@@ -44,7 +44,7 @@ function PageEight() {
               Stay tuned as we prepare your experience. The journey begins
               shortly.
             </p>
-            <Image src="/loading.jpg" width={300} height={100}/>
+            <Image src="/loading.jpg" width={300} height={100} alt='imagery'/>
           </div>
         </div>
       </div>

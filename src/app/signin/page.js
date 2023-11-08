@@ -52,6 +52,7 @@ export default function Signin() {
                   width={70}
                   height={100}
                   style={{ marginLeft: "20%", marginTop: "10px" }}
+                  alt='imagery'
                 />
               </Link>
               <div className="flex flex-1 flex-col justify-center px-4 py-2 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
@@ -100,11 +101,14 @@ export default function Signin() {
                             placeholder="Password"
                             {...register("password")}
                           />
-                          <img
-                            src={passwordVisible ? 'show.png' : 'hide.png'}
+                          <Image
+                            src={passwordVisible ? 'show.png' : '/hide.png'}
                             alt={passwordVisible ? 'Show Password' : 'Hide Password'}
                             className="absolute top-1/2 transform -translate-y-1/2 right-2 w-5 h-5 cursor-pointer"
                             onClick={togglePasswordVisibility}
+                            width={100}
+                            height={100}
+
                           />
     
                         </div>
@@ -158,7 +162,7 @@ export default function Signin() {
 
                       <div className="mt-6 grid gap-4">
                         <p className="text-[#001233] text-sm mt-3 text-center">
-                          Don't have an account?{" "}
+                          Don&apos;t have an account?{" "}
                           <Link
                             href="/signup"
                             className="font-bold text-[#FF595A] hover:text-[#001233]"
@@ -174,7 +178,7 @@ export default function Signin() {
             </div>
             <div>
               {" "}
-              <Image src="/Frame750.jpg" width={700} height={700} />
+              <Image src="/Frame750.jpg" width={700} height={700} alt='imagery'/>
             </div>
           </div>
         </div>

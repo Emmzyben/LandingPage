@@ -37,6 +37,7 @@ function PageFive() {
                   width={70}
                   height={100}
                   style={{ marginLeft: "20%", marginTop: "10px" }}
+                  alt='imagery'
                 />
               </Link>
               <Image
@@ -44,6 +45,7 @@ function PageFive() {
                 width={400}
                 height={100}
                 style={{ marginLeft: "20%", marginTop: "40px" }}
+                alt='imagery'
               />
               <div className="flex flex-1 flex-col justify-center px-4 py-2 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
                 <div className="mx-auto w-full max-w-sm lg:w-96">
@@ -123,7 +125,7 @@ function PageFive() {
             </div>
           </div>
           <div>
-          <Image src="/Frame750.jpg" width={700} height={700} />
+          <Image src="/Frame750.jpg" width={700} height={700} alt='imagery'/>
           </div>
         </div>
       </div>
