@@ -29,9 +29,11 @@ export default function ForgotPassword() {
       <div>
         <Link href='/home'>
         <img
-          src="Logo.jpg"
+          src="/Logo.jpg"
           width={70}
           style={{ marginLeft: "10%", marginTop: "10px", paddingRight: "10px" }}
+         height={100}
+        alt="see"
         />
         </Link>
 
