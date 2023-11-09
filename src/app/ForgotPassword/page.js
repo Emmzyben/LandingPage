@@ -4,6 +4,7 @@ import Link from "next/link";
 import "@/styles/styles.css";
 import { useForm } from "react-hook-form";
 import axiosInstance from "@/lib/axios";
+import Image from 'next/image';
 
 export default function ForgotPassword() {
   const {
