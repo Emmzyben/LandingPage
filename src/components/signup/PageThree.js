@@ -2,6 +2,7 @@ import { City, Country } from "country-state-city";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
+import Selector from '@/components/selector';
 
 let countryData = Country.getAllCountries();
 
@@ -35,8 +36,11 @@ function PageThree() {
     stateData && setState(stateData[0]);
   }, [stateData]);
   useEffect(() => {
-    setCityData(City.getCitiesOfState(country?.isoCode, state?.isoCode));
-  }, [state]);
+    if (country?.isoCode && state?.isoCode) {
+      setCityData(City.getCitiesOfState(country.isoCode, state.isoCode));
+    }
+  }, [country?.isoCode, state?.isoCode]);
+  
   useEffect(() => {
     cityData && setCity(cityData[0]);
   }, [cityData]);

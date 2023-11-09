@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { City, Country, State } from 'country-state-city';
 import { useEffect, useState } from 'react';
@@ -20,9 +20,11 @@ export default function Location() {
   }, [country]);
 
   useEffect(() => {
-    setCityData(City.getCitiesOfState(country?.isoCode, state?.isoCode));
-  }, [state]);
-
+    if (country?.isoCode && state?.isoCode) {
+      setCityData(City.getCitiesOfState(country.isoCode, state.isoCode));
+    }
+  }, [country?.isoCode, state?.isoCode]);
+  
   useEffect(() => {
     stateData && setState(stateData[0]);
   }, [stateData]);
